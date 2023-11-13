@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Form Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email_">Email:</label>
+      <input type="email" id="email_" required>
+      <label for="password_">Password:</label>
+      <input type="password" id="password_" required>
+      <label for="name_surname">Full name:</label>
+      <input id="name_surname" required pattern="[A-Za-z]+" minlength="1" required>
+      <label for="date_birth">Date of births:</label>
+      <input type="date" id="date_birth" required>
+      <label for="phone_number">Phone number:</label>
+      <input type="tel" id="date_birth" required>
+      <label for="plan_">Choose your plan:</label>
+      <select name="plan_" id="plan_">
+        <option value="Free Plan">Free Plan</option>
+        <option value="Small Plan">Small Plan(49.99$ month)</option>
+        <option value="Medium Plan">Medium Plan(99.99$ mont)</option>
+        <option value="Business Plan">Business Plan(143.99$ mont)</option>
+      </select>
+      <label for="pro_plan">Pro plan</label>
+      <input type="checkbox" id="pro_plan">
+      <fieldset>
+        <legend>Payment Details</legend>
+        <label for="card_number">Card number:</label>
+      <input type="number" id="card_number" required>
+      <label for="cvc_number">CVC</label>
+      <input type="number" id="cvc_number" required>
+      <label for="exp_date">Expiration date:</label>
+      <input type="date" id="exp_date" required>
+      <label for="bil_adress">Billing Address:</label>
+      <input type="text" id="bil_adress" required>
+
+      </fieldset>
+    </form>
+
+  </body>
+</html>
