@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+li {
+  margin-right: 10px;
+}
+
+a,
+summary,
+#disabled {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+input {
+  flex-grow: 1;
+  border: 1px solid #4caf50;
+  padding: 30px;
+  width: auto;
+}
+button {
+  border: 1px solid #4caf50;
+  padding: 10px;
+  background-color: transparent;
+  color: #4caf50;
+  cursor: pointer;
+}
