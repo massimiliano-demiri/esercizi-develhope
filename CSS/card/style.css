@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  min-width: 200px;
+  width: auto;
+}
+#card_description,
+#Links,
+.items > p {
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
