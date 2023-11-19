@@ -1,0 +1,58 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar div {
+  padding: 8px;
+  font-size: 24px;
+  display: block;
+}
+#logo {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid#2b2b2b;
+}
+#links a {
+  text-align: center;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: xx-large;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#links a:hover {
+  color: #2b2bb2;
+}
+
+#avatar {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#user {
+  text-align: center;
+  font-size: small;
+  justify-content: flex-end;
+  border-top: 1px solid black;
+}
+
+#links {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.username {
+  margin: 0;
+  color: #2b2b2b;
+}
