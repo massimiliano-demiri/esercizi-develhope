@@ -10,6 +10,7 @@ function lanciaDadi(){
     const dado2 = Math.floor(Math.random() * 6) + 1;
     console.log("Dado 1 = ", dado1);
     console.log("Dado 2 = ", dado2);
+    
 
 }
 
