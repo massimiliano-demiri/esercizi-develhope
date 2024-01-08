@@ -6,9 +6,9 @@ function fetchDataFromAPI() {
         let success = Math.random() * 0.5;
         // let success = 0.6;
         if (success<0.5){
-            resolve("Ok");
+            resolve("Data retrieved successfully");
         } else {
-            reject("Not Ok");
+            reject(new Error("Error: Failed to fetch data"));
         }
 
     })
@@ -16,9 +16,9 @@ function fetchDataFromAPI() {
 }
 
 fetchDataFromAPI().then((data)=>{
-    console.log("Data retrieved successfully");
+    console.log(data);
 })
-.catch((data)=>{
-    console.log("Error: Failed to fetch data");
+.catch((errore)=>{
+    console.error(errore.message);
 })
 
