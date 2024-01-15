@@ -1,0 +1,37 @@
+<!-- Crea la tua To-Do List mediante i metodi visti nel video.
+Crea una funzione che ti permette di:
+
+- Creare una lista aggiungendo il task desiderato mediante il bottone `Aggiungi`.
+- Creare un checkbox per ogni task aggiunto. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>To-do List</h1>
+      <input type="text" placeholder="..." />
+      <button onclick="addProduct()">Aggiungi</button>
+      <ul></ul>
+    </div>
+    <script>
+      const addProduct = () => {
+        const form_input = document.querySelector('input');
+        const input_value = form_input.value;
+        
+        if (input_value != ""){
+          const ul = document.querySelector('ul');
+          const li = document.createElement('li');
+          li.innerText = input_value;
+          ul.appendChild(li); 
+        }
+ 
+};
+    </script>
+  </body>
+</html>
