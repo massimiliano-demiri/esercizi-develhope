@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Il signore degli anelli - Carta del personaggio</title>
+</head>
+<body>
+  <h1>Il signore degli anelli - Carta del personaggio</h1>
+  <img src="https://ringsdb.com/api/public/card/01001" alt="immagine del personaggio">
+  <p id="name"></p>
+  <script>
+    fetch('https://ringsdb.com/api/public/card/01001')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('name').textContent = data.name;
+        document.querySelector('img').src = data.imagesrc;
+      })
+      .catch(error => console.error(error));
+      
+  </script>
+</body>
+</html>
