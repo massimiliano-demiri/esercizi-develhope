@@ -1,10 +1,7 @@
-import { AllertClock } from "./AllertClock";
-function handleClick() {
-    const now = new Date();
-    alert(`The current time is: ${now.toLocaleTimeString()}`);
-}
+import { Counter } from "./Counter";
+
 export function App(){
     return (
-        <AllertClock handleClick={handleClick} />
+        <Counter />
     )
 }
