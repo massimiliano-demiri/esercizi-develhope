@@ -1,0 +1,35 @@
+import { useState } from "react";
+
+
+
+export function Fetch(){
+const [data, setData] = useState(null)
+
+function fetchData(id){
+    fetch(`https://jsonplaceholder.typicode.com/users/${2}`)
+    .then((response) =>{
+        if(response.ok){
+           //  console.log(response);
+         return response.json()
+            
+        }
+        else{
+            console.log()
+            throw new Error("errore")
+        }
+    })
+    .then((data) => {
+        console.log(data)
+        setData(data)
+    }
+})
+
+}
+//fetchData()
+    return(
+<div>
+    {data?(<p>{data.name}</p>): <p>data loading</p>}
+
+</div>
+    )
+}
